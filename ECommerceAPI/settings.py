@@ -42,7 +42,7 @@ ALLOWED_HOSTS = [
     "*"
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://4f27-39-48-222-237.ngrok-free.app","https://c0cd-39-48-222-237.ngrok-free.app"] 
+CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-11cd.up.railway.app"] 
 
 # Application definition
 
