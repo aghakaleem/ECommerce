@@ -176,9 +176,9 @@ def product_search(request):
 
 @api_view(['POST'])
 def create_checkout_session(request):
-    email = request.data.get("email")
+    email = request.data.get("email") #Request will include the email of the user
     #YOUR_DOMAIN = "https://nextshoppit.vercel.app"
-    cart_code = request.data.get("cart_code")
+    cart_code = request.data.get("cart_code") #Request will include the cart_code of the cart
     cart = Cart.objects.get(cart_code=cart_code)
     line_items_list = []
     for item in cart.cartitems.all():
